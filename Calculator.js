@@ -37,3 +37,13 @@ function GetCalculate() {
             break;
     }
 }
+
+function reset() {
+    document.getElementById("num1").value = null;
+    document.getElementById("num2").value = null;
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("plus").checked = false;
+    document.getElementById("minus").checked = false;
+    document.getElementById("star").checked = false;
+    document.getElementById("slash").checked = false;
+}

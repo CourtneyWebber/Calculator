@@ -16,54 +16,58 @@
                 <h1>Calculator</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-auto">
-                <label>First number: </label>
+            <div class="row">
+                <div class="col-auto">
+                    <label>First number: </label>
+                </div>
+                <div class="col-auto">
+                    <input type="number" name="num1" id="num1" />
+                </div>
             </div>
-            <div class="col-auto">
-                <input type="number" name="num1" id="num1"/>
+            <div class="row">
+                <div class="col-auto" id="add">
+                    <label for="plus"> + </label>
+                    <input type="radio" name="operator" value="+" id="plus" />
+                </div>
+                <div class="col-auto" id="subtract">
+                    <label for="minus"> - </label>
+                    <input type="radio" name="operator" value="-" id="minus" />
+                </div>
+                <div class="col-auto" id="multiply">
+                    <label for="star"> x </label>
+                    <input type="radio" name="operator" value="*" id="star" />
+                </div>
+                <div class="col-auto" id="divide">
+                    <label for="slash"> / </label>
+                    <input type="radio" name="operator" value="/" id="slash" />
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-auto" id="add">
-                <input type="radio" name="operator" value="+" onclick="">+</input>
+            <div class="row">
+                <div class="col-auto">
+                    <label>Second number: </label>
+                </div>
+                <div class="col-auto">
+                    <input type="number" name="num2" id="num2" />
+                </div>
             </div>
-            <div class="col-auto" id="subtract" >
-                <input type="radio"name="operator" value="-">-</input>
+            <div class="row">
+                <div class="col-auto">
+                    <button type="submit" onclick="GetCalculate()">Equals</button>
+                </div>
             </div>
-            <div class="col-auto" id="multiply">
-                <input type="radio"name="operator" value="*">x</input>
+            <div class="row">
+                <div class="col-auto">
+                    <label>Result: </label>
+                </div>
+                <div class="col-auto">
+                    <textarea id="result"></textarea>
+                </div>
             </div>
-            <div class="col-auto" id="divide">
-                <input type="radio" name="operator" value="/">/</input>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-auto">
-                <label>Second number: </label>
-            </div>
-            <div class="col-auto">
-                <input type="number" name="num2" id="num2"/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-auto">
-                <button type="submit" onclick="GetCalculate()">Equals</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-auto">
-                <label>Result: </label>
-            </div>
-            <div class="col-auto">
-                <textarea id="result"></textarea>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-auto">
-                <button type="reset">Reset</button>
-            </div>
-        </div>
+            <div class="row">
+                <div class="col-auto">
+                    <button type="reset" onclick="reset()">Reset</button>
+                </div>
+            </div>       
     </div>
 </body>
 </html>
